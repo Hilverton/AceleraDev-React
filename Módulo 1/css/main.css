@@ -1,0 +1,281 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*FLEXBOX*/
+
+.d-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-row{
+	flex-direction: row;
+}
+.flex-column{
+	flex-direction: column;
+}
+.justify-center{
+	justify-content: center;
+}
+.justify-around{
+	justify-content: space-around;
+}
+.justify-between{
+	justify-content: space-between;
+}
+.align-center{
+	align-items: center;
+}
+/*FLEXBOX*/
+header{
+	background-image: url("./../img/capa-madmax2.jpg");
+	height: 90vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+.escuro{
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+nav{
+	color: white;
+}
+.menu{
+	margin: 0;
+	padding: 0;
+	width: 400px;
+}
+.menu li:hover{
+	color: #e4bb23;
+	transition: all 0.2s ease-in-out;
+}
+.user{
+	font-size: 13px;
+	font-weight: 700;
+}
+.user img{
+	width: 45px;
+	height: 45px;
+    margin-right: 15px;
+    overflow: hidden;
+	border-radius: 27px;
+}
+.contentPoster{
+	padding-bottom: 20px;
+	
+}
+h2{
+	margin: 0;
+	padding: 0;
+	font-size: 65px;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+}
+.genrePoster{
+	margin: 12px 0 25px 0;
+}
+.genrePoster a{
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	margin-right: 15px;
+}
+.genrePoster a:hover{
+	color: #e4bb23;
+	transition: all 0.2s ease-in-out;
+}
+.btnPoster{
+	width: 195px;
+	height: 49px;
+	padding-left: 25px;
+	margin-bottom: 25px;
+	background-color: #e4bb23;
+	border: none;
+	border-radius: 25px;
+	font-size: 15px;
+}
+.btnPoster:hover{
+	background-color: #bc9a1d;
+	transition: all 0.2s ease-in-out;
+}
+.btnPoster i{
+	margin-left: 10px;
+	margin-right: -10px;
+	font-size: 20px;
+}
+.infoPoster{
+	font-size: 14px;
+	margin: 14px 0;
+	color: white;
+}
+.launchPoster{
+	font-size: 14px;
+	margin: 14px 0;
+	color: #e4bb23;
+}
+main{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.menuCategories{
+	padding: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.categories{
+	padding: 0 20px;
+	margin: 0;
+}
+.categoriesDirection{
+	flex-direction: row;
+}
+.categories li{
+	margin: 0 20px;
+	padding: 25px 0;
+	align-self: center;
+	height: 66px;
+	color: #e4bb23;
+	box-sizing: border-box;
+}
+.categories li:hover{
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+ul{
+	list-style: none;
+}
+li{
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+}
+.movies{
+	padding: 20px 0;
+}
+.card{
+	width: 230px;
+	margin-bottom: 29px;
+	border-radius: 10px;
+	background-color: white;
+	overflow: hidden;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.09);
+}
+.cardHead{
+	position: relative;
+}
+.cardHead img{
+	width: 100%;
+	height: 344px;
+	margin: 0;
+	padding: 0;
+}
+.overlay{
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background-color: rgba(0, 0, 0, 0.4);
+  	overflow: hidden;
+  	width: 100%;
+  	height: 0;
+}
+.card:hover .overlay {
+  	overflow: visible;
+	height: 100%;
+}
+.cardHeadInfo{
+	text-align: center;
+}
+.cardHeadInfo h3{
+	color: #e4bb23;
+	text-transform: uppercase;
+}
+.cardHeadInfo i{
+	font-size: 50px;
+	color: white;
+}
+.cardHeadInfo i:hover{
+	color: #e4bb23;
+}
+.cardFooter{
+	height: 95px;
+	margin: 0;
+	padding: 10px;
+}
+.title{
+	font-size: 13px;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+}
+.boxGenre{
+	margin: 0;
+	padding: 0;
+}
+.genre{
+	text-decoration: none;
+	font-size: 12px;
+	color: #e4bb23;
+}
+.genre:hover{
+	text-decoration: underline;
+}
+.note{
+	margin: 0;
+	padding: 0;
+}
+.note i{
+	margin: 0;
+	font-size: 20px;
+	color: #bababa
+}
+.note i:hover{
+	color: #e74c3c;
+	cursor: pointer;
+}
+.note p{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 700;
+}
+footer{
+	padding: 20px 0;
+	background-color: white;
+}
+footer ul li{
+	margin-left: 40px;
+	font-size: 25px;
+	color: #bababa;
+}
+.fab:hover{
+	transition: all 0.2s ease-in-out;
+}
+.fa-twitter:hover{
+	color: #55acee;
+}
+.fa-facebook-square:hover{
+	color: #3b5998;
+}
+.fa-instagram:hover{
+	color: #e95950;
+}
