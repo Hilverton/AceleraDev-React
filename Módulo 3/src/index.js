@@ -1,7 +1,7 @@
 'use strict'
 
 const fibonacci = () => {
-    let fib = [0,1];
+    const fib = [0,1];
     let i = 2;
     while(true) {
         var num = fib[i - 2] + fib[i - 1];
@@ -12,10 +12,7 @@ const fibonacci = () => {
     return fib;
 }
 
-const isFibonnaci = (num) => {
-    const fib = fibonacci();
-    return fib.includes(num);
-}
+const isFibonnaci = (num) => fibonacci().includes(num);
 
 module.exports = {
     fibonacci,
