@@ -1,4 +1,3 @@
-# CODENATION
 # Site estático: 🎥 IMDB  
   
 ## Objetivo: 
