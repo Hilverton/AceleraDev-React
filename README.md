@@ -1,3 +1,3 @@
 # AceleraDev-React
 
-# Agrupar a resolução dos desafios de cada semana
+Agrupar a resolução dos desafios de cada semana
